@@ -3,16 +3,16 @@
     {
       "description": "Default Welcome Intent",
       "name": "MAIN",
-      "fulfillment": {
-        "conversationName": "myAflApp"
-      },
       "intent": {
         "name": "actions.intent.MAIN",
         "trigger": {
           "queryPatterns": [
-            "talk to my AFL app
+            "talk to my AFL app"
           ]
         }
+      },
+      "fulfillment": {
+        "conversationName": "myAflApp"
       }
     }
   ],
