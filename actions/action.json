@@ -8,12 +8,32 @@
       "fulfillment": {
         "conversationName": "myAfl-app"
       }
+    },
+    {
+      "name": "TEAM",
+      "intent": {
+        "name": "com.example.myAfl.TEAM",
+        "parameters" : [{
+          "name": "team",
+          "type": "SchemaOrg_Text"
+        }],
+        "trigger": {
+          "queryPatterns": [
+            "My favourite team is $SchemaOrg_Text:team",
+            "It is $SchemaOrg_Text:team",
+            "$SchemaOrg_Text:team"
+          ]
+        }
+      },
+      "fulfillment": {
+        "conversationName": "myAfl-app"
+      }
     }
   ],
   "conversations": {
     "myAflApp": {
       "name": "myAfl-app",
-      "url": "https://us-central1-myafl-7015f.cloudfunctions.net/myFunction",
+      "url": "https://us-central1-myafl-7015f.cloudfunctions.net/myAFLApp",
       "fulfillmentApiVersion": 2
     }
   },
